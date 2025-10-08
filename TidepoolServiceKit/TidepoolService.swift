@@ -50,7 +50,7 @@ public final class TidepoolService: Service, TAPIObserver, ObservableObject {
 
     public let tapi: TAPI = TAPI(clientId: BuildDetails.default.tidepoolServiceClientId, redirectURL: BuildDetails.default.tidepoolServiceRedirectURL)
 
-    public private (set) var error: Error?
+    public private(set) var error: Error?
 
     private let id: String
 
